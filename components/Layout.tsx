@@ -2,7 +2,7 @@ import * as React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-interface Props {
+interface LayoutProps {
   title?: string
   children: React.ReactNode
 }
@@ -10,7 +10,7 @@ interface Props {
 export const Layout = ({
   title = 'This is the default title',
   children,
-}: Props) => {
+}: LayoutProps) => {
   return (
     <div>
       <Head>
