@@ -1,16 +1,17 @@
-import Head from "next/head";
-import { motion } from "framer-motion";
+import * as React from 'react'
 
-import { Refresh } from "../components/Refresh";
-import { Example } from "../components/Example";
+import { Layout } from '../components/Layout'
+import { Refresh } from '../components/Refresh'
+import { Keyframes } from '../components/Keyframes'
 
 export default function Home() {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = React.useState(0)
+
   return (
-    <>
+    <Layout title="keyframes">
       <Refresh onClick={() => setCount(count + 1)} />
       <div className="example-container">
-        <Example key={count} />
+        <Keyframes key={count} />
       </div>
       <style jsx global>{`
         body {
@@ -51,6 +52,6 @@ export default function Home() {
           cursor: pointer;
         }
       `}</style>
-    </>
-  );
+    </Layout>
+  )
 }
