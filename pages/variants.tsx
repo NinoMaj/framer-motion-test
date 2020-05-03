@@ -4,16 +4,16 @@ import { motion } from 'framer-motion'
 
 import { Layout } from '../components/Layout'
 import { Refresh } from '../components/Refresh'
-import { Simplest } from '../components/Simplest'
+import { Variants } from '../components/Variants'
 
 export default function Page() {
   const [count, setCount] = React.useState(0)
 
   return (
-    <Layout title="simplest">
+    <Layout title="variants">
       <Refresh onClick={() => setCount(count + 1)} />
       <div className="example-container">
-        <Simplest key={count} />
+        <Variants />
       </div>
       <style jsx global>{`
         body {

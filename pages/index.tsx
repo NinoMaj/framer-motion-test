@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { Layout } from '../components/Layout'
 
-export default function Home() {
+export default function Page() {
   return (
     <Layout title="home">
       <h1>Available animations</h1>
@@ -16,6 +16,11 @@ export default function Home() {
         <li>
           <Link href="/keyframes">
             <a>Keyframes</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/variants">
+            <a>Variants</a>
           </Link>
         </li>
       </ul>

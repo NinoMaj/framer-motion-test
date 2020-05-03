@@ -4,7 +4,7 @@ import { Layout } from '../components/Layout'
 import { Refresh } from '../components/Refresh'
 import { Keyframes } from '../components/Keyframes'
 
-export default function Home() {
+export default function Page() {
   const [count, setCount] = React.useState(0)
 
   return (
