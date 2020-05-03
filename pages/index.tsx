@@ -23,6 +23,11 @@ export default function Page() {
             <a>Variants</a>
           </Link>
         </li>
+        <li>
+          <Link href="/gesture-animation">
+            <a>Gesture animation</a>
+          </Link>
+        </li>
       </ul>
     </Layout>
   )
